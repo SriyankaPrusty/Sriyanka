@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(
+        135deg,
+        #ffe5ec,
+        #ffd6e0,
+        #ffc2d1
+    );
+    min-height:100vh;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    color:#ff4d6d;
+    font-size:3rem;
+}
+
+.hero p{
+    color:#555;
+}
+
+.card{
+    background:white;
+    width:90%;
+    max-width:500px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn{
+    background:#ff758f;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#ff4d6d;
+}
+
+.floating-heart{
+    position:fixed;
+    font-size:30px;
+    animation:float 6s infinite linear;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
